@@ -29,7 +29,7 @@
 <br>
 
 
-[ ABOUT ]
+# [ ABOUT ]
 
 GhostChat is a lightweight, secure, peer-to-peer messaging tool
 that works over local network (LAN) or globally via tunneling.
@@ -38,7 +38,7 @@ derivation. No central server, no databases, no tracking.
 
 
 
-[ REQUIREMENTS ]
+# [ REQUIREMENTS ]
 
 - bash 4.0 or higher
 - openssl (for encryption)
@@ -48,7 +48,7 @@ derivation. No central server, no databases, no tracking.
 - ngrok (optional - for global mode)
 
 
-[ INSTALLATION ]
+# [ INSTALLATION ]
 
 ```ruby
    git clone https://github.com/monji024/ghostchat.git
@@ -78,7 +78,7 @@ derivation. No central server, no databases, no tracking.
    sudo mv ngrok /usr/local/bin/
 ```
 
-[ Usage ]
+# [ Usage ]
 
 Run the script:
 ```bash
@@ -86,7 +86,7 @@ Run the script:
 ```
 
 
-[ Local Network (LAN) ]
+# [ Local Network (LAN) ]
 
 Computer A (Host):
 $ ./ghost.sh
@@ -105,7 +105,7 @@ Room password: secret123
 Now Dariush and siavash can chat securely.
 
 
-[ Global (Ngrok)]
+# [ Global (Ngrok)]
 
 Computer A (Host):
 $ ./ghostchat.sh
@@ -126,19 +126,19 @@ Now Dariush and siavash can chat securely over internet.
 
 
 
-[ LICENSE ]
+# [ LICENSE ]
 
 MIT License
 
 
-[ DISCLAIMER ]
+# [ DISCLAIMER ]
 
 This software is provided "as is", without warranty of any kind.
 Use at your own risk. The author is not responsible for any misuse
 or damage caused by this software.
 
 
-[ CONTACT ]
+# [ CONTACT ]
 
 Telegram: @DevCrr
 GitHub: https://github.com/monji024
