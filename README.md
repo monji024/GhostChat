@@ -1,4 +1,4 @@
-#  GHOSTCHAT
+
 
 <div align="center">
   <h1>GhostChat</h1>
