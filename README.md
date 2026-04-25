@@ -144,22 +144,3 @@ Telegram: @DevCrr
 GitHub: https://github.com/monji024
 
 
-[ CHANGELOG ]
-
-v3.3 - 2024
-  + Real username display in chat room
-  + Improved message formatting
-  + Fixed base64 line wrapping issue
-
-v3.2 - 2024
-  + Fixed bidirectional communication
-  + Removed FIFO pipe issues
-
-v3.1 - 2024
-  + Added ngrok global mode
-  + Improved error handling
-
-v3.0 - 2024
-  + Initial release with AES-256 encryption
-
-EOF
