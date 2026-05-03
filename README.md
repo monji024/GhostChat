@@ -89,17 +89,27 @@ Run the script:
 # [ Local Network (LAN) ]
 
 Computer A (Host):
+
 $ ./ghost.sh
+
 Username: Dariush
+
 Choice: 1
+
 Room password: secret123
+
 Your local IP: 192.168.1.100
 
 Computer B (Join):
+
 $ ./ghost.sh
+
 Username: siavash
+
 Choice: 2
+
 Host IP: 192.168.1.100
+
 Room password: secret123
 
 Now Dariush and siavash can chat securely.
