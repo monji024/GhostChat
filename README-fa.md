@@ -201,5 +201,5 @@ export LC_ALL=en_US.UTF-8
 - **Project**: [![Repo](https://img.shields.io/badge/Repository-Ghostchat-blue?style=flat-square&logo=github)](https://github.com/monji024/Ghostchat)
 
 
-## License
+## مجوز
 [MIT](LICENSE) © monji
