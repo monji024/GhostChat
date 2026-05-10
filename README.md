@@ -14,7 +14,6 @@
 
 **A secure group chat room with AES-256-CBC encryption supporting LAN and global connections**
 
-[![GitHub stars](https://img.shields.io/github/stars/ghost-chat/ghost-chat)]()
 
 </div>
 
