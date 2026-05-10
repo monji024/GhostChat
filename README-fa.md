@@ -39,6 +39,7 @@
 ![WSL](https://img.shields.io/badge/WSL-0a7b9a.svg?style=flat&logo=windows&logoColor=white)
 
 </div>
+
 ## نصب Ruby
 
 ```bash
