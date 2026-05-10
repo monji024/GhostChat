@@ -1,156 +1,207 @@
 
 
+
 <div align="center">
-  <h1>GhostChat</h1>
-  <p><strong> GHOSTCHAT </strong></p>
-  
-  <a href="https://github.com/monji024/ghostchat">
-    <img src="https://img.shields.io/badge/version-1.0-green?style=flat-square" alt="Version">
-  </a>
-  <a href="https://github.com/monji024/ghostchat/stargazers">
-    <img src="https://img.shields.io/github/stars/monji024/ghostchat?style=flat-square" alt="GitHub Stars">
-  </a>
-  <a href="https://github.com/monji024/ghostchat/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/monji024/ghostchat?style=flat-square" alt="MIT License">
-  </a>
-  <a href="https://github.com/monji024/ghostchat">
-    <img src="https://img.shields.io/github/last-commit/monji024/ghostchat?style=flat-square" alt="Last Commit">
-  </a>
-  <a href="https://github.com/monji024/ghostchat">
-    <img src="https://img.shields.io/github/languages/top/monji024/ghostchat?style=flat-square" alt="Bash">
-  </a>
+
+# Ghost Chat
+
+[![English](https://img.shields.io/badge/English-README-blue)](README.md)
+[![Persian](https://img.shields.io/badge/Persian-README-green)](README-fa.md)
+
+![Ruby](https://img.shields.io/badge/Ruby-2.5+-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-2.7-blue)
+
+**A secure group chat room with AES-256-CBC encryption supporting LAN and global connections**
+
+[![GitHub stars](https://img.shields.io/github/stars/ghost-chat/ghost-chat)]()
+
 </div>
 
-<br>
+## Features
 
-> **"زبان سرخ، سر سبز را به باد می‌دهد."**  
->
+- 🔐 **End-to-End Encryption** with AES-256-CBC and PBKDF2
+- 🌐 **Local (LAN)** and **Global (Ngrok)** connections
+- 👥 **Group chat** with real-time online user count
+- 🎨 **Beautiful CLI interface**
+- 📊 **Status bar** showing IP, port, online count, and username
+- 🚀 **Runs on Linux, macOS, and WSL**
+- 🔌 **Ngrok support** for internet connections
+- ⚡ **Lightweight and fast** - no database required
 
-<br>
+## 📋 Prerequisites
 
+- **Ruby** version 2.5 or higher
+- **Ngrok** (only for global connections)
+- Operating System: Linux, macOS, or WSL on Windows
 
-# [ ABOUT ]
+<div align="center">
 
-GhostChat is a lightweight, secure, peer-to-peer messaging tool
-that works over local network (LAN) or globally via tunneling.
-All messages are encrypted using AES-256-CBC with PBKDF2 key
-derivation. No central server, no databases, no tracking.
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)
+![WSL](https://img.shields.io/badge/WSL-0a7b9a?style=flat&logo=windows&logoColor=white)
 
+</div>
 
+## Install Ruby
 
-# [ REQUIREMENTS ]
-
-- bash 4.0 or higher
-- openssl (for encryption)
-- netcat (nc) (for network communication)
-- curl (for ngrok API)
-- base64 (for encoding)
-- ngrok (optional - for global mode)
-
-
-# [ INSTALLATION ]
-
-```ruby
-   git clone https://github.com/monji024/ghostchat.git
-   cd ghostchat
-```
-```ruby
-   chmod +x ghostchat.sh
-```
-3. Install dependencies (if missing):
-
-   Debian/Ubuntu:
-   ```bash
-   sudo apt install openssl netcat curl
-   ```
-   Arch Linux:
-   ```bash
-   sudo pacman -S openssl gnu-netcat curl
-   ```
-   macOS:
-   ```bash
-   brew install openssl netcat curl
-   ```
-4. (Optional) Install ngrok for global mode:
 ```bash
-   wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
-   tar -xzf ngrok-v3-stable-linux-amd64.tgz
-   sudo mv ngrok /usr/local/bin/
-```
+# Ubuntu/Debian
+sudo apt update && sudo apt install ruby-full
 
-# [ Usage ]
+# macOS
+brew install ruby
 
-Run the script:
+# Windows (WSL)
+wsl --install
+sudo apt update && sudo apt install ruby-full
+
+## Install Ngrok
 ```bash
-./ghostchat.sh
+
+# Download and install
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+sudo mv ngrok /usr/local/bin/
+```
+# Set your auth token
+**ngrok authtoken YOUR_TOKEN**
+
+## Direct Download
+```bash
+
+git clone https://github.com/ghost-chat/ghost-chat.git
+cd ghost-chat
+ruby ghostchat.rb
+```
+## User Guide
+# Main Menu
+```text
+
+[1] Host - Local (LAN)     ← Host on local network
+[2] Join - Local (LAN)     ← Connect to local network
+[3] Host - Global (ngrok)  ← Host globally
+[4] Join - Global (ngrok)  ← Connect globally
+[5] Exit                   ← Exit
 ```
 
+Usage Scenarios
+## 1️⃣ LAN Chat
 
-# [ Local Network (LAN) ]
+- Host:
 
-Computer A (Host):
+   - Select option [1] Host - Local
 
-$ ./ghost.sh
+   - Enter room password
 
-Username: Dariush
+   - Share your local IP with friends
 
-Choice: 1
+- Friends:
 
-Room password: secret123
+   - Select option [2] Join - Local
 
-Your local IP: 192.168.1.100
+   - Enter host IP and password
 
-Computer B (Join):
+   - Start chatting :)
 
-$ ./ghost.sh
+## 2️⃣ Global Chat (via Internet)
 
-Username: siavash
+- Host:
 
-Choice: 2
+   - Select option [3] Host - Global (ngrok)
 
-Host IP: 192.168.1.100
+   - Enter room password
 
-Room password: secret123
+   - Enter your Ngrok auth token
 
-Now Dariush and siavash can chat securely.
+   - Share the public address (e.g., tcp://0.tcp.ngrok.io:12345) with friends
+
+- Friends:
+
+   - Select option [4] Join - Global (ngrok)
+
+   - Enter public address and password
+
+   - Start chatting :)
+
+- 🔒 Security
+
+   - ✅ AES-256-CBC encryption - Global standard
+
+   - ✅ PBKDF2 - Standard compliant
+
+   - ✅ End-to-End encryption - Messages only readable with password
+
+   - ✅ No message storage - Messages never saved to disk
+
+   - ✅ Password authentication - Only password holders can join
+
+## 🛠 Technical Architecture
+# Project Structure
+
+```text
+
+ghostchat/
+├── ghostchat.rb      # Main application file
+├── README-fa.md      # Persian documentation
+├── README.md         # English documentation
+└── LICENSE           # License
+```
+- Core Components
+
+   - Crypto - Encryption management
+
+   - ChatServer - Chat server (connection management & message broadcasting)
+
+   - ChatClient - Chat client (send and receive messages)
+
+   - StatusBar - Status bar (display information)
+
+   - NgrokManager - Ngrok tunnel management
+
+# 🐛 Troubleshooting
+**Issue: require 'openssl' failed**
+```bash
+
+# Ubuntu/Debian
+sudo apt install libssl-dev
+gem install openssl
+```
+# Issue: Port 5550 is in use
+
+**The program automatically frees the port. If not:**
+```bash
+
+# Linux/macOS
+fuser -k 5550/tcp
+# OR
+lsof -ti :5550 | xargs kill -9
+```
+# Issue: Garbled/weird characters
+
+** Make sure your terminal supports UTF-8: **
+```bash
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+```
+- Issue: Ngrok connection not working
+
+   - Make sure ngrok is installed: which ngrok
+
+   - Set your auth token: ngrok authtoken YOUR_TOKEN
+
+   - Check your internet connection
+
+## 🤝 Contributing
+
+**I'd be happy if you contribute to improving this project**
+
+## Connect
+
+- **GitHub**: [![GitHub](https://img.shields.io/badge/GitHub-monji024-181717?style=flat-square&logo=github)](https://github.com/monji024)
+- **Project**: [![Repo](https://img.shields.io/badge/Repository-Ghostchat-blue?style=flat-square&logo=github)](https://github.com/monji024/Ghostchat)
 
 
-# [ Global (Ngrok)]
-
-Computer A (Host):
-$ ./ghostchat.sh
-Username: Dariush
-Choice: 3
-Room password: secret123
-Ngrok auth token: 2u6V23aJXQZdxFpY1U5EjSokT8t_...
-Address: tcp://0.tcp.ngrok.io:12345
-
-Computer B (Join from anywhere):
-$ ./ghostchat.sh
-Username: siavash
-Choice: 4
-Global address: tcp://0.tcp.ngrok.io:12345
-Room password: secret123
-
-Now Dariush and siavash can chat securely over internet.
-
-
-
-# [ LICENSE ]
-
-MIT License
-
-
-# [ DISCLAIMER ]
-
-This software is provided "as is", without warranty of any kind.
-Use at your own risk. The author is not responsible for any misuse
-or damage caused by this software.
-
-
-# [ CONTACT ]
-
-Telegram: @DevCrr
-GitHub: https://github.com/monji024
-
-
+## License
+[MIT](LICENSE) © monji
