@@ -12,7 +12,7 @@
 
 **یک چت‌روم گروهی امن با رمزنگاری AES-256-CBC و پشتیبانی از اتصالات داخلی و خارجی**
 
-[![GitHub stars](https://img.shields.io/github/stars/ghost-chat/ghost-chat)]()
+[![GitHub stars](https://img.shields.io/github/stars/ghost-chat/ghost-chat)]
 
 </div>
 
