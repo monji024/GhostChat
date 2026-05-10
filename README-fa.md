@@ -74,13 +74,14 @@ ruby ghostchat.rb
 ## راهنمای استفاده
 
 # منوی اصلی
+```text
 
 [1] Host - Local (LAN)     ← میزبانی در شبکه محلی
 [2] Join - Local (LAN)     ← اتصال به شبکه محلی
 [3] Host - Global (ngrok)  ← میزبانی جهانی
 [4] Join - Global (ngrok)  ← اتصال جهانی
 [5] Exit                   ← خروج
-
+```
 ## سناریوهای استفاده
 1️⃣ چت در شبکه محلی (LAN)
 
