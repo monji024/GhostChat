@@ -66,8 +66,8 @@ ngrok authtoken YOUR_TOKEN
 ## دانلود مستقیم
 ```bash
 
-git clone https://github.com/ghost-chat/ghost-chat.git
-cd ghost-chat
+git clone https://github.com/monji024/ghostchat.git
+cd ghostchat
 ruby ghostchat.rb
 ```
 
