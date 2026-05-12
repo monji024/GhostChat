@@ -54,9 +54,9 @@ brew install ruby
 # Windows (WSL)
 wsl --install
 sudo apt update && sudo apt install ruby-full
-
+```
 ## Install Ngrok
-
+```bash
 # Download and install
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
