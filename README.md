@@ -68,8 +68,8 @@ sudo mv ngrok /usr/local/bin/
 ## Direct Download
 ```bash
 
-git clone https://github.com/ghost-chat/ghost-chat.git
-cd ghost-chat
+git clone https://github.com/monji024/ghostchat.git
+cd ghostchat
 ruby ghostchat.rb
 ```
 ## User Guide
